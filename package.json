@@ -13,6 +13,7 @@
     "@americanexpress/react-seo": "^1.4.2",
     "@auth0/auth0-react": "^2.2.4",
     "@babel/preset-env": "^7.25.8",
+    "autoprefixer": "^10.4.20",
     "express": "^4.21.1",
     "firebase": "^10.14.0",
     "lucide-react": "^0.447.0",
