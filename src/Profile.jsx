@@ -15,44 +15,7 @@ import {seo} from "@americanexpress/react-seo"
 
 const Profile = () => {
 
-  seo({
-    title: 'Locandu Profile',
-    description: 'View your available points and buy more with Paytm, PhonePe, or UPI.',
-    keywords: [
-      'Locandu',
-      'Profile',
-      'Points System',
-      'User profiles',
-      'Loyalty program',
-      'Reward points',
-      'Community engagement',
-      'User-generated content',
-      'Social platform',
-      'Profile customization',
-      'Gamification',
-      'Incentives for participation',
-      'User rewards',
-      'Engagement metrics',
-      'Digital profiles',
-      'Social interaction',
-      'User experience',
-      'Member benefits',
-      'Referral program',
-      'Feedback system',
-      'Personalization',
-      'Activity tracking',
-      'Social networking',
-      'Content sharing',
-      'User insights',
-      'In-app notifications',
-      'Participation rewards',
-      'Mobile app features',
-      'Community building',
-      'User satisfaction'
-    ],
-    image: 'https://i.postimg.cc/9X9HqzTh/image-1.png',
-  });
-
+  
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenu = () => {

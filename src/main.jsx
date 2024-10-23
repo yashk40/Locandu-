@@ -3,9 +3,11 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import { Auth0Provider } from '@auth0/auth0-react';
 import './index.css';
+import {HelmetProvider} from 'react-helmet-async';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <HelmetProvider>
     <Auth0Provider
       domain="dev-4wpnwnb5hufkpy4z.us.auth0.com" // Change to production domain
       clientId="UBbJm8l4lZwsqcc06jyskRXng4KvdTHX" // Add quotes
@@ -15,6 +17,8 @@ createRoot(document.getElementById('root')).render(
       }}
     >
       <App />
+      
     </Auth0Provider>
+    </HelmetProvider>
   </StrictMode>
 );

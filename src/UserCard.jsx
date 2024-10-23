@@ -26,6 +26,8 @@ const UserCard = ({ userData }) => {
             src={imageUrl || "/placeholder.svg?height=100&width=100"} 
             alt={title} 
             className="w-full h-auto rounded-lg object-cover" 
+            height="auto"
+            width="full"
           />
         </div>
         <div className="w-2/3 pl-4">

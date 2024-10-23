@@ -5,6 +5,9 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+// import {helmet}
+
 
 export const  Hyderabad = () => {
   const [users, setUsers] = useState([]);
@@ -54,6 +57,14 @@ export const  Hyderabad = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+        <title>Locandu -Call Girls in Hyderabad, Real & Safe Meeting Anytime</title>
+        <meta name="description" content="If you're looking for Hyderabad call girls, Locandu is a safe classified Platform, You can find many call girls in Hyderabad Anytime For a Real Meeting." />
+        <meta name="keywords" content="Hyderabad call girls,call girls Hyderabad,Hyderabad call girl,call girl in Hyderabad,call girl Hyderabad" />
+        <meta property="og:title" content="Locandu | Call Girls in Hyderabad" />
+        <meta property="og:image" content="URL_to_your_image" />
+        <link rel="canonical" href={`https://locandu.com/`} /> 
+      </Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -109,7 +120,7 @@ export const  Hyderabad = () => {
 <option value="Guwahati">Guwahati</option>
 <option value="Hyderabad">Hyderabad</option>
 <option value="Indore">Indore</option>
-<option value="Jaipur">Jaipur</option>
+<option value="Hyderabad">Hyderabad</option>
 <option value="Jodhpur">Jodhpur</option>
 <option value="Kochi">Kochi</option>
 <option value="Kolkata">Kolkata</option>

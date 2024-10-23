@@ -70,19 +70,14 @@ export default function Component() {
 
   return (
      <>
-       <Helmet>
-        <title>Services - Call & More</title>
+
+    <div className="min-h-screen flex flex-col bg-gray-50">
+    <Helmet>
+        <title>Locandu Call girl Services - Call & More</title>
         <meta name="description" content="Discover the best services and girls in your area. Browse profiles, chat, and book your experience." />
-        <meta name="keywords" content="escort, call girls, escort services, adult services" />
+        <meta name="keywords" content="Patna call girls,call girls Patna,Patna escorts,safe meetings Patna,call girl patna,patna redd liight area contact number,find girlfriend in patna,patna girl contact,patna randi no,patna girls mobile number,patna girls no,patna girl for friendship,patna randi phone number,patna girl number,patna girls whatsapp number,call girl in patna" />
         <link rel="canonical" href="https://locandu.com/" />
       </Helmet>
-      <seo
-        title=" Services - Call & More"
-        description="Discover the best services and girls in your area. Browse profiles, chat, and book your experience."
-        keywords={['escort', 'call girls', 'escort services', 'adult services' , 'Locandu' , 'locandu' , "Locandu Escort" , "locandu girl"]}
-        image=" "
-      />
-    <div className="min-h-screen flex flex-col bg-gray-50">
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -138,143 +133,143 @@ export default function Component() {
   <LocationLink name="Agra" />
 </Link>
 
-<Link to="/Guwahati">
+<Link to="/Call-girl-Guwahati">
   <LocationLink name="Guwahati" />
 </Link>
 
-<Link to="/Kanpur">
+<Link to="/Call-girl-Kanpur">
   <LocationLink name="Kanpur" />
 </Link>
 
-<Link to="/Varanasi">
+<Link to="/Call-girl-Varanasi">
   <LocationLink name="Varanasi" />
 </Link>
 
-<Link to="/Vadodra">
+<Link to="/Call-girl-Vadodra">
   <LocationLink name="Vadodara" />
 </Link>
 
-<Link to="/Ranchi">
+<Link to="/Call-girl-Ranchi">
   <LocationLink name="Ranchi" />
 </Link>
 
-<Link to="/Gwailor">
+<Link to="/Call-girl-Gwailor">
   <LocationLink name="Gwalior" />
 </Link>
 
-<Link to="/Surat">
+<Link to="/Call-girl-Surat">
   <LocationLink name="Surat" />
 </Link>
 
-<Link to="/Noida">
+<Link to="/Call-girl-Noida">
   <LocationLink name="Noida" />
 </Link>
 
-<Link to="/Ludhiana">
+<Link to="/Call-girl-Ludhiana">
   <LocationLink name="Ludhiana" />
 </Link>
 
-<Link to="/Jaipur">
+<Link to="/Call-girl-Jaipur">
   <LocationLink name="Jaipur" />
 </Link>
 
-<Link to="/Mumbai">
+<Link to="/Call-girl-Mumbai">
   <LocationLink name="Mumbai" />
 </Link>
 
-<Link to="/Kolkata">
+<Link to="/Call-girl-Kolkata">
   <LocationLink name="Kolkata" />
 </Link>
 
-<Link to="/Delhi">
+<Link to="/Call-girl-Delhi">
   <LocationLink name="Delhi" />
 </Link>
 
-<Link to="/Chennai">
+<Link to="/Call-girl-Chennai">
   <LocationLink name="Chennai" />
 </Link>
 
-<Link to="/Nashik">
+<Link to="/Call-girl-Nashik">
   <LocationLink name="Nashik" />
 </Link>
 
-<Link to="/Meerut">
+<Link to="/Call-girl-Meerut">
   <LocationLink name="Meerut" />
 </Link>
 
-<Link to="/Visakhapatnam">
+<Link to="/Call-girl-Visakhapatnam">
   <LocationLink name="Visakhapatnam" />
 </Link>
 
-<Link to="/Jalandhar">
+<Link to="/Call-girl-Jalandhar">
   <LocationLink name="Jalandhar" />
 </Link>
 
-<Link to="/Dehradun">
+<Link to="/Call-girl-Dehradun">
   <LocationLink name="Dehradun" />
 </Link>
 
-<Link to="/Lucknow">
+<Link to="/Call-girl-Lucknow">
   <LocationLink name="Lucknow" />
 </Link>
 
-<Link to="/Ahmedabad">
+<Link to="/Call-girl-Ahmedabad">
   <LocationLink name="Ahmedabad" />
 </Link>
 
-<Link to="/Goa">
+<Link to="/Call-girl-Goa">
   <LocationLink name="Goa" />
 </Link>
 
-<Link to="/Pune">
+<Link to="/Call-girl-Pune">
   <LocationLink name="Pune" />
 </Link>
 
-<Link to="/Nagpur">
+<Link to="/Call-girl-Nagpur">
   <LocationLink name="Nagpur" />
 </Link>
 
-<Link to="/Rajkot">
+<Link to="/Call-girl-Rajkot">
   <LocationLink name="Rajkot" />
 </Link>
 
-<Link to="/Jodhpur">
+<Link to="/Call-girl-Jodhpur">
   <LocationLink name="Jodhpur" />
 </Link>
 
-<Link to="/Udaipur">
+<Link to="/Call-girl-Udaipur">
   <LocationLink name="Udaipur" />
 </Link>
 
-<Link to="/Gurugram">
+<Link to="/Call-girl-Gurugram">
   <LocationLink name="Gurugram" />
 </Link>
 
-<Link to="/Ambala">
+<Link to="/Call-girl-Ambala">
   <LocationLink name="Ambala" />
 </Link>
 
-<Link to="/Bhopal">
+<Link to="/Call-girl-Bhopal">
   <LocationLink name="Bhopal" />
 </Link>
 
-<Link to="/Indore">
+<Link to="/Call-girl-Indore">
   <LocationLink name="Indore" />
 </Link>
 
-<Link to="/Chandigarh">
+<Link to="/Call-girl-Chandigarh">
   <LocationLink name="Chandigarh" />
 </Link>
 
-<Link to="/Hyderabad">
+<Link to="/Call-girl-hyderabad">
   <LocationLink name="Hyderabad" />
 </Link>
 
-<Link to="/Patna">
+<Link to="/Call-girl-Patna">
   <LocationLink name="Patna" />
 </Link>
 
-<Link to="/Raipur">
+<Link to="/Call-girl-Raipur">
   <LocationLink name="Raipur" />
 </Link>
 

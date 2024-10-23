@@ -5,7 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
-
+import {Helmet} from 'react-helmet-async'
 export const Patna = () => {
   const [users, setUsers] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,10 +53,20 @@ export const Patna = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+  <Helmet>
+        <title>Locandu | Call Girls in Patna - Safe & Real Meetings</title>
+        <meta name="description" content="Best call girls in patna, available here at Locandu, find call girls in patna with thousand of choices multiple girls are available" />
+        <meta name="keywords" content="Patna call girls,call girls Patna,Patna escorts,safe meetings Patna,call girl patna,patna redd liight area contact number,find girlfriend in patna,patna girl contact,patna randi no,patna girls mobile number,patna girls no,patna girl for friendship,patna randi phone number,patna girl number,patna girls whatsapp number,call girl in patna" />
+        <meta property="og:title" content="Locandu | Call Girls in Patna" />
+        <meta property="og:image" content="URL_to_your_image" />
+        <link rel="canonical" href={`https://locandu.com/`} /> 
+      </Helmet>
+
+      <a href="https://www.ontoplist.com/beauty-websites/" style={{display:"none"}} >Check</a>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
-            <h1 className="text-2xl sm:text-3xl font-bold text-white relative" id='logo'>Locandu</h1>
+            <p className="text-2xl sm:text-3xl font-bold text-white relative" id='logo'>Locandu</p>
             <button className="sm:hidden text-white" onClick={toggleMenu}>
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -88,6 +98,7 @@ export const Patna = () => {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <main className="bg-white rounded-lg shadow-lg p-8">
           <header className="bg-white rounded-lg shadow-md p-6 mb-16">
+            <h1 className="text-2xl font-bold mb-4" >Explore Call girls in {selectedCity}</h1>
             <div className="relative">
               <select 
                 value={selectedCity} 
@@ -129,6 +140,37 @@ export const Patna = () => {
           </div>
         </main>
       </div>
+      <footer className="bg-white py-6 sm:py-8 px-4 sm:px-6 lg:px-8 shadow-inner">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-center text-gray-800">Genuine Platform For Discerning Gentlemen Worldwide</h2>
+          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6 text-center max-w-3xl mx-auto">
+            Locandu is an advertising and information resource and has no connection or liability with sites or individuals mentioned here. We ONLY sell advertisement space; we are not an agency, nor are we involved in  any business. We take no responsibility for the content or actions of third-party websites or individuals that you may access following links, email, or phone contacts from this portal.
+          </p>
+          <p className="text-xs sm:text-sm text-gray-600 mb-6 sm:mb-8 text-center">
+            Locandu - browse directory with more than 50,000 profiles to choose from.
+          </p>
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 mb-6 sm:mb-8">
+            {["Australia", "Bangladesh", "Nepal", "Sri Lanka", "United Kingdom"].map((country) => (
+              <CountryLink key={country} name={country} />
+            ))}
+          </div> */}
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-s sm:text-s text-gray-600 mb-4 sm:mb-6 relative  top-4">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-s sm:text-s text-gray-600 mb-4 sm:mb-6 relative top-4">
+  <Link to="/About" className="hover:text-green-600 transition-colors">About Us</Link>
+  <Link to="/Contact"  className="hover:text-green-600 transition-colors">Contact Us</Link>
+  <Link to="/Admin" className="hover:text-green-600 transition-colors">Post Your Ad</Link>
+   
+  <Link  to="/Terms" className="hover:text-green-600 transition-colors">Terms Of Service</Link>
+  <Link to="/Privacy"   className="hover:text-green-600 transition-colors">Privacy Policy</Link>
+</div>
+
+
+          
+          </div>
+        
+        </div>
+    
+      </footer>
     </div>
   );
 };

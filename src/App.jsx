@@ -69,41 +69,41 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
-        <Route path="/Vadodra" element={<Vadodra />} />
-        <Route path="/Guwahati" element={<Guwahati />} />
-        <Route path="/Noida" element={<Noida />} />
-        <Route path="/Kanpur" element={<Kanpur />} />
-        <Route path="/Varanasi" element={<Varanasi />} />
-        <Route path="/Ranchi" element={<Ranchi />} />
-        <Route path="/Gwailor" element={<Gwailor />} />
-        <Route path="/Surat" element={<Surat />} />
-        <Route path="/Ludhiana" element={<Ludhiana />} />
-        <Route path="/Jaipur" element={<Jaipur />} />
-        <Route path="/Mumbai" element={<Mumbai />} />
-        <Route path="/Kolkata" element={<Kolkata />} />
-        <Route path="/Delhi" element={<Delhi />} />
-        <Route path="/Chennai" element={<Chennai />} />
-        <Route path="/Nashik" element={<Nashik />} />
-        <Route path="/Meerut" element={<Meerut />} />
-        <Route path="/Visakhapatnam" element={<Visakhapatnam />} />
-        <Route path="/Jalandhar" element={<Jalandhar />} />
-        <Route path="/Dehradun" element={<Dehradun />} />
-        <Route path="/Lucknow" element={<Lucknow />} />
-        <Route path="/Ahmedabad" element={<Ahmedabad />} />
-        <Route path="/Pune" element={<Pune />} />
-        <Route path="/Goa" element={<Goa />} />
-        <Route path="/Nagpur" element={<Nagpur />} />
-        <Route path="/Rajkot" element={<Rajkot />} />
-        <Route path="/Jodhpur" element={<Jodhpur />} />
-        <Route path="/Udaipur" element={<Udaipur />} />
-        <Route path="/Gurugram" element={<Gurugram />} />
-        <Route path="/Ambala" element={<Ambala />} />
-        <Route path="/Bhopal" element={<Bhopal />} />
-        <Route path="/Indore" element={<Indore />} />
-        <Route path="/Chandigarh" element={<Chandigarh />} />
-        <Route path="/Hyderabad" element={<Hyderabad />} />
-        <Route path="/Patna" element={<Patna />} />
-        <Route path="/Raipur" element={<Raipur />} />
+        <Route path="/Call-girl-Vadodra" element={<Vadodra />} />
+        <Route path="/Call-girl-Guwahati" element={<Guwahati />} />
+        <Route path="/Call-girl-Noida" element={<Noida />} />
+        <Route path="/Call-girl-Kanpur" element={<Kanpur />} />
+        <Route path="/Call-girl-Varanasi" element={<Varanasi />} />
+        <Route path="/Call-girl-Ranchi" element={<Ranchi />} />
+        <Route path="/Call-girl-Gwailor" element={<Gwailor />} />
+        <Route path="/Call-girl-Surat" element={<Surat />} />
+        <Route path="/Call-girl-Ludhiana" element={<Ludhiana />} />
+        <Route path="/Call-girl-Jaipur" element={<Jaipur />} />
+        <Route path="/Call-girl-Mumbai" element={<Mumbai />} />
+        <Route path="/Call-girl-Kolkata" element={<Kolkata />} />
+        <Route path="/Call-girl-Delhi" element={<Delhi />} />
+        <Route path="/Call-girl-Chennai" element={<Chennai />} />
+        <Route path="/Call-girl-Nashik" element={<Nashik />} />
+        <Route path="/Call-girl-Meerut" element={<Meerut />} />
+        <Route path="/Call-girl-Visakhapatnam" element={<Visakhapatnam />} />
+        <Route path="/Call-girl-Jalandhar" element={<Jalandhar />} />
+        <Route path="/Call-girl-Dehradun" element={<Dehradun />} />
+        <Route path="/Call-girl-Lucknow" element={<Lucknow />} />
+        <Route path="/Call-girl-Ahmedabad" element={<Ahmedabad />} />
+        <Route path="/Call-girl-Pune" element={<Pune />} />
+        <Route path="/Call-girl-Goa" element={<Goa />} />
+        <Route path="/Call-girl-Nagpur" element={<Nagpur />} />
+        <Route path="/Call-girl-Rajkot" element={<Rajkot />} />
+        <Route path="/Call-girl-Jodhpur" element={<Jodhpur />} />
+        <Route path="/Call-girl-Udaipur" element={<Udaipur />} />
+        <Route path="/Call-girl-Gurugram" element={<Gurugram />} />
+        <Route path="/Call-girl-Ambala" element={<Ambala />} />
+        <Route path="/Call-girl-Bhopal" element={<Bhopal />} />
+        <Route path="/Call-girl-Indore" element={<Indore />} />
+        <Route path="/Call-girl-Chandigarh" element={<Chandigarh />} />
+        <Route path="/Call-girl-hyderabad" element={<Hyderabad />} />
+        <Route path="/Call-girl-Patna" element={<Patna />} />
+        <Route path="/Call-girl-Raipur" element={<Raipur />} />
       </Routes>
     </Router>
   );
