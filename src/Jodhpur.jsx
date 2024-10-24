@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
 
 export const Jodhpur = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +54,15 @@ export const Jodhpur = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+                 <Helmet>
+    <title>Top Call Girls in Jodhpur | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Jodhpur at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Jodhpur call girls,call girls Jodhpur,Jodhpur escorts,safe meetings Jodhpur,call girl Jodhpur,Jodhpur redd liight area contact number,find girlfriend in Jodhpur,Jodhpur girl contact,Jodhpur randi no,Jodhpur girls mobile number,Jodhpur girls no,Jodhpur girl for friendship,Jodhpur randi phone number,Jodhpur girl number,Jodhpur girls whatsapp number,call girl in Jodhpur" />
+    <meta property="og:title" content="Premium Call Girls in Jodhpur | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Jodhpur with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

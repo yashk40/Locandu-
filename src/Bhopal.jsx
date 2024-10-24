@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import {Helmet} from 'react-helmet-async'
 
 export const Bhopal = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +54,20 @@ export const Bhopal = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+       <Helmet>
+        <title>Locandu - Bhopal Call Girls & Escorts</title>
+        <meta name="description" content="Locandu offers premium Bhopal call girls and escort services. Experience safe meetings, discreet services, and delightful companions for all your desires." />
+        <meta name="keywords" content="Bhopal call girls, Bhopal escorts, Bhopal independent escorts, Bhopal adult services, Bhopal high class escorts, Bhopal VIP escorts, safe meetings in Bhopal, discreet escort services, fun companions in Bhopal, sexy escorts Bhopal, nightlife Bhopal escorts, affordable escorts Bhopal" />
+        <meta property="og:title" content="Locandu - Bhopal Call Girls & Escorts" />
+        <meta property="og:description" content="Discover premium Bhopal call girls and escort services. Safe and discreet meetings with delightful companions." />
+        <meta property="og:url" content="https://locandu.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_to_your_image.jpg" />
+        <meta name="twitter:title" content="Locandu - Bhopal Call Girls & Escorts" />
+        <meta name="twitter:description" content="Explore Bhopal's top escort services and find the perfect companion for your needs." />
+        <meta name="twitter:image" content="URL_to_your_image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

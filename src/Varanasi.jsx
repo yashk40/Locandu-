@@ -5,6 +5,9 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+
+
 
 export const Varanasi = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +56,15 @@ export const Varanasi = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+                 <Helmet>
+    <title>Top Call Girls in Varanasi | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Varanasi at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Varanasi call girls,call girls Varanasi,Varanasi escorts,safe meetings Varanasi,call girl Varanasi,Varanasi redd liight area contact number,find girlfriend in Varanasi,Varanasi girl contact,Varanasi randi no,Varanasi girls mobile number,Varanasi girls no,Varanasi girl for friendship,Varanasi randi phone number,Varanasi girl number,Varanasi girls whatsapp number,call girl in Varanasi" />
+    <meta property="og:title" content="Premium Call Girls in Varanasi | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Varanasi with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

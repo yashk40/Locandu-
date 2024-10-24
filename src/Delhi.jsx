@@ -6,6 +6,7 @@ import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
 import { Footer } from './Footer';
+import { Helmet } from 'react-helmet-async';
 
 export const Delhi = () => {
   const [users, setUsers] = useState([]);
@@ -54,6 +55,15 @@ export const Delhi = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+        <Helmet>
+    <title>Top Call Girls in Delhi | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Delhi at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Delhi call girls,call girls Delhi,Delhi escorts,safe meetings Delhi,call girl Delhi,Delhi redd liight area contact number,find girlfriend in Delhi,Delhi girl contact,Delhi randi no,Delhi girls mobile number,Delhi girls no,Delhi girl for friendship,Delhi randi phone number,Delhi girl number,Delhi girls whatsapp number,call girl in Delhi" />
+    <meta property="og:title" content="Premium Call Girls in Delhi | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Delhi with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

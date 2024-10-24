@@ -5,6 +5,9 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+
+
 
 export const  Goa = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +56,15 @@ export const  Goa = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+    <title>Top Call Girls in Goa | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Goa at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Goa call girls,call girls Goa,Goa escorts,safe meetings Goa,call girl Goa,Goa redd liight area contact number,find girlfriend in Goa,Goa girl contact,Goa randi no,Goa girls mobile number,Goa girls no,Goa girl for friendship,Goa randi phone number,Goa girl number,Goa girls whatsapp number,call girl in Goa" />
+    <meta property="og:title" content="Premium Call Girls in Goa | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Goa with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -95,7 +107,7 @@ export const  Goa = () => {
                 className="w-full p-3 text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
               >
                 <option value="goa">Goa</option>
-                <option value="agra">Guwahati</option>
+                <option value="Goa">Guwahati</option>
                 <option value="delhi">Delhi</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="bangalore">Bangalore</option>

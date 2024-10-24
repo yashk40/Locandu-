@@ -5,6 +5,8 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+
 
 export const Gurugram = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +55,15 @@ export const Gurugram = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+            <Helmet>
+    <title>Top Call Girls in Gurugram | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Gurugram at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Gurugram call girls,call girls Gurugram,Gurugram escorts,safe meetings Gurugram,call girl Gurugram,Gurugram redd liight area contact number,find girlfriend in Gurugram,Gurugram girl contact,Gurugram randi no,Gurugram girls mobile number,Gurugram girls no,Gurugram girl for friendship,Gurugram randi phone number,Gurugram girl number,Gurugram girls whatsapp number,call girl in Gurugram" />
+    <meta property="og:title" content="Premium Call Girls in Gurugram | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Gurugram with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -107,7 +118,7 @@ export const Gurugram = () => {
                 <option value="lucknow">Lucknow</option>
                 <option value="chandigarh">Chandigarh</option>
                 <option value="kochi">Kochi</option>
-                <option value="goa">Goa</option>
+                <option value="Gurugram">Gurugram</option>
                 <option value="varanasi">Varanasi</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">

@@ -5,6 +5,9 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+
+
 
 export const  Gwailor = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +56,15 @@ export const  Gwailor = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+                 <Helmet>
+    <title>Top Call Girls in Gwalior | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Gwalior at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Gwalior call girls,call girls Gwalior,Gwalior escorts,safe meetings Gwalior,call girl Gwalior,Gwalior redd liight area contact number,find girlfriend in Gwalior,Gwalior girl contact,Gwalior randi no,Gwalior girls mobile number,Gwalior girls no,Gwalior girl for friendship,Gwalior randi phone number,Gwalior girl number,Gwalior girls whatsapp number,call girl in Gwalior" />
+    <meta property="og:title" content="Premium Call Girls in Gwalior | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Gwalior with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

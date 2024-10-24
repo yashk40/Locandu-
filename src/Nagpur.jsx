@@ -5,6 +5,8 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import { Helmet } from 'react-helmet-async';
+
 
 export const Nagpur = () => {
   const [users, setUsers] = useState([]);
@@ -53,6 +55,15 @@ export const Nagpur = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+                 <Helmet>
+    <title>Top Call Girls in Nagpur | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Nagpur at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Nagpur call girls,call girls Nagpur,Nagpur escorts,safe meetings Nagpur,call girl Nagpur,Nagpur redd liight area contact number,find girlfriend in Nagpur,Nagpur girl contact,Nagpur randi no,Nagpur girls mobile number,Nagpur girls no,Nagpur girl for friendship,Nagpur randi phone number,Nagpur girl number,Nagpur girls whatsapp number,call girl in Nagpur" />
+    <meta property="og:title" content="Premium Call Girls in Nagpur | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Nagpur with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
