@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-
 import { LogIn, PlusCircle, ChevronRight, Menu, X } from 'lucide-react'
 import { CreditCard, User,  } from "lucide-react"
 import { List } from "lucide-react";
@@ -10,7 +9,6 @@ import { useEffect } from "react";
 import { doc  } from "firebase/firestore";
 import { db } from "./Firebase";
 import { getDoc } from "firebase/firestore";
-import {seo} from "@americanexpress/react-seo"
 
 
 const Profile = () => {
