@@ -53,15 +53,15 @@ export const Patna = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-  <Helmet>
-        <title>Locandu | Call Girls in Patna - Safe & Real Meetings</title>
-        <meta name="description" content="Best call girls in patna, available here at Locandu, find call girls in patna with thousand of choices multiple girls are available" />
-        <meta name="keywords" content="Patna call girls,call girls Patna,Patna escorts,safe meetings Patna,call girl patna,patna redd liight area contact number,find girlfriend in patna,patna girl contact,patna randi no,patna girls mobile number,patna girls no,patna girl for friendship,patna randi phone number,patna girl number,patna girls whatsapp number,call girl in patna" />
-        <meta property="og:title" content="Locandu | Call Girls in Patna" />
-        <meta property="og:image" content="URL_to_your_image" />
-        <link rel="canonical" href={`https://locandu.com/`} /> 
-      </Helmet>
-
+<Helmet>
+    <title>Top Call Girls in Patna | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Patna at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Patna call girls,call girls Patna,Patna escorts,safe meetings Patna,call girl patna,patna redd liight area contact number,find girlfriend in patna,patna girl contact,patna randi no,patna girls mobile number,patna girls no,patna girl for friendship,patna randi phone number,patna girl number,patna girls whatsapp number,call girl in patna" />
+    <meta property="og:title" content="Premium Call Girls in Patna | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Patna with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <a href="https://www.ontoplist.com/beauty-websites/" style={{display:"none"}} >Check</a>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
