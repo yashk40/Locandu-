@@ -10,7 +10,6 @@ import { doc  } from "firebase/firestore";
 import { db } from "./Firebase";
 import { getDoc } from "firebase/firestore";
 
-
 const Profile = () => {
 
   
