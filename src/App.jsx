@@ -47,7 +47,7 @@ import { Bhopal } from './Bhopal';
 import { Indore } from './Indore';
 import { Chandigarh } from './Chandigarh';
 import { Hyderabad } from './Hyderabad';
-import { Patna } from './Patna';
+import { Patna } from './Call-girl-Patna';
 import { Raipur } from './Raipur';
 
 
