@@ -75,7 +75,7 @@ export default function Component() {
     <Helmet>
         <title>Locandu Call girl Services - Call & More</title>
         <meta name="description" content="Discover the best services and girls in your area. Browse profiles, chat, and book your experience." />
-        <meta name="keywords" content="Patna call girls,call girls Patna,Patna escorts,safe meetings Patna,call girl patna,patna redd liight area contact number,find girlfriend in patna,patna girl contact,patna randi no,patna girls mobile number,patna girls no,patna girl for friendship,patna randi phone number,patna girl number,patna girls whatsapp number,call girl in patna" />
+        <meta name="keywords" content="call girls,call girlss , escorts,safe meetings ,call girl , redd liight area contact number,find girlfriend in , girl contact, randi no, girls mobile number, girls no, girl for friendship, randi phone number, girl number, girls whatsapp number,call girl in " />
         <link rel="canonical" href="https://locandu.com/" />
       </Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
@@ -197,8 +197,8 @@ export default function Component() {
   <LocationLink name="Meerut" />
 </Link>
 
-<Link to="/Call-girl-Visakhapatnam">
-  <LocationLink name="Visakhapatnam" />
+<Link to="/Call-girl-Visakham">
+  <LocationLink name="Visakham" />
 </Link>
 
 <Link to="/Call-girl-Jalandhar">
@@ -265,8 +265,8 @@ export default function Component() {
   <LocationLink name="Hyderabad" />
 </Link>
 
-<Link to="/Call-girl-Patna">
-  <LocationLink name="Patna" />
+<Link to="/Call-girl-">
+  <LocationLink name="" />
 </Link>
 
 <Link to="/Call-girl-Raipur">
