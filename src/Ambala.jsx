@@ -53,6 +53,15 @@ export const  Ambala = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+    <title>Top Call Girls in Ambala | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Ambala at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Ambala call girls,call girls Ambala,Ambala escorts,safe meetings Ambala,call girl Ambala,Ambala redd liight area contact number,find girlfriend in Ambala,Ambala girl contact,Ambala randi no,Ambala girls mobile number,Ambala girls no,Ambala girl for friendship,Ambala randi phone number,Ambala girl number,Ambala girls whatsapp number,call girl in Ambala" />
+    <meta property="og:title" content="Premium Call Girls in Ambala | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Ambala with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
@@ -103,7 +112,7 @@ export const  Ambala = () => {
                 <option value="hyderabad">Hyderabad</option>
                 <option value="pune">Pune</option>
                 <option value="jaipur">Jaipur</option>
-                <option value="ahmedabad">Ahmedabad</option>
+                <option value="Ambala">Ambala</option>
                 <option value="lucknow">Lucknow</option>
                 <option value="chandigarh">Chandigarh</option>
                 <option value="kochi">Kochi</option>

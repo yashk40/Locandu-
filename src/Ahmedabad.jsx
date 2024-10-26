@@ -53,6 +53,15 @@ export const Ahmedabad = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+<Helmet>
+    <title>Top Call Girls in Ahmedabad | Safe & Discreet Meetings at Locandu</title>
+    <meta name="description" content="Discover the best call girls in Ahmedabad at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
+    <meta name="keywords" content="Ahmedabad call girls,call girls Ahmedabad,Ahmedabad escorts,safe meetings Ahmedabad,call girl Ahmedabad,Ahmedabad redd liight area contact number,find girlfriend in Ahmedabad,Ahmedabad girl contact,Ahmedabad randi no,Ahmedabad girls mobile number,Ahmedabad girls no,Ahmedabad girl for friendship,Ahmedabad randi phone number,Ahmedabad girl number,Ahmedabad girls whatsapp number,call girl in Ahmedabad" />
+    <meta property="og:title" content="Premium Call Girls in Ahmedabad | Locandu" />
+    <meta property="og:description" content="Explore a wide selection of call girls in Ahmedabad with guaranteed safety and discretion. Find your perfect match today!" />
+    <meta property="og:image" content="URL_to_your_image" /> 
+    <link rel="canonical" href="https://locandu.com/" />
+</Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">

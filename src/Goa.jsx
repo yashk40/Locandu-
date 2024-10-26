@@ -56,7 +56,7 @@ export const  Goa = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Helmet>
+<Helmet>
     <title>Top Call Girls in Goa | Safe & Discreet Meetings at Locandu</title>
     <meta name="description" content="Discover the best call girls in Goa at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
     <meta name="keywords" content="Goa call girls,call girls Goa,Goa escorts,safe meetings Goa,call girl Goa,Goa redd liight area contact number,find girlfriend in Goa,Goa girl contact,Goa randi no,Goa girls mobile number,Goa girls no,Goa girl for friendship,Goa randi phone number,Goa girl number,Goa girls whatsapp number,call girl in Goa" />
