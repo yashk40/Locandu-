@@ -75,7 +75,7 @@ export default function Component() {
     <Helmet>
         <title>Locandu Call girl Services - Call & More</title>
         <meta name="description" content="Discover the best services and girls in your area. Browse profiles, chat, and book your experience." />
-        <meta name="keywords" content="call girls,call girlss , escorts,safe meetings ,call girl , redd liight area contact number,find girlfriend in , girl contact, randi no, girls mobile number, girls no, girl for friendship, randi phone number, girl number, girls whatsapp number,call girl in " />
+        <meta name="keywords" content="call girls,call girlss,escorts,safe meetings,call girl,redd liight area contact number,find girlfriend in,girl contact,randi no,girls mobile number,girls no,girl for friendship,girl number,girls whatsapp number,call girl india" />
         <link rel="canonical" href="https://locandu.com/" />
       </Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
