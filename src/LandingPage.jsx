@@ -115,12 +115,12 @@ export default function Component() {
 
       <main className="flex-grow p-4 sm:p-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800 py-7" >Explore World's Service Directory</h2>
-          <p className="text-center mb-8 text-gray-600 text-sm sm:text-base  py-5">Search from over 20k+ Active Ads in 500+ Cities for Free</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800 py-7" >Explore World's Call Girl Service Directory</h2>
+          <p className="text-center mb-8 text-gray-600 text-sm sm:text-base  py-5">Search from over 20k+ Call girls Ads in 500+ Cities for Free</p>
 
           <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg">
             <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-800">Popular locations:</h3>
-            <p className="text-sm text-gray-600 mb-4 sm:mb-6">Find a date tonight to fulfill your needs. You can browse through the best partner in india for free</p>
+            <p className="text-sm text-gray-600 mb-4 sm:mb-6">Find a date tonight to fulfill your needs. You can browse through the best girl in india for free</p>
             
             <div className="flex flex-wrap gap-2 mb-6">
               {['Delhi', 'Mumbai', 'Kolkata', 'Chennai', 'Pune', 'Jaipur'].map((city) => (
