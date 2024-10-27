@@ -58,7 +58,7 @@ export const  Kanpur = () => {
   <Helmet>
     <title>Top Call Girls in Kanpur | Safe & Discreet Meetings at Locandu</title>
     <meta name="description" content="Discover the best call girls in Kanpur at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
-    <meta name="keywords" content="Kanpur call girls,call girls Kanpur,Kanpur escorts,safe meetings Kanpur,call girl Kanpur,Kanpur redd liight area contact number,find girlfriend in Kanpur,Kanpur girl contact,Kanpur randi no,Kanpur girls mobile number,Kanpur girls no,Kanpur girl for friendship,Kanpur randi phone number,Kanpur girl number,Kanpur girls whatsapp number,call girl in Kanpur" />
+    <meta name="keywords" content="Kanpur call girls,call girls Kanpur,Kanpur escorts,safe meetings Kanpur,call girl Kanpur" />
     <meta property="og:title" content="Premium Call Girls in Kanpur | Locandu" />
     <meta property="og:description" content="Explore a wide selection of call girls in Kanpur with guaranteed safety and discretion. Find your perfect match today!" />
     <meta property="og:image" content="URL_to_your_image" /> 
