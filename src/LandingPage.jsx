@@ -82,7 +82,7 @@ export default function Component() {
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
             <h1 className="text-2xl sm:text-3xl font-bold text-white relative" id='logo' >Locandu</h1>
-            <button className="sm:hidden text-white" onClick={toggleMenu}>
+            <button className="sm:hidden text-white" id='button2455'  onClick={toggleMenu}>
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
@@ -197,8 +197,8 @@ export default function Component() {
   <LocationLink name="Meerut" />
 </Link>
 
-<Link to="/Call-girl-Visakham">
-  <LocationLink name="Visakham" />
+<Link to="/Call-girl-Visakhapatnam">
+  <LocationLink name="Visakhapatnam" />
 </Link>
 
 <Link to="/Call-girl-Jalandhar">
@@ -263,10 +263,6 @@ export default function Component() {
 
 <Link to="/Call-girl-hyderabad">
   <LocationLink name="Hyderabad" />
-</Link>
-
-<Link to="/Call-girl-">
-  <LocationLink name="" />
 </Link>
 
 <Link to="/Call-girl-Raipur">
