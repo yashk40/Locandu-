@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { LogIn, PlusCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import UserCard from './UserCard'; // Import the UserCard component
+import {Helmet} from 'react-helmet-async'
 
 export const  Ambala = () => {
   const [users, setUsers] = useState([]);
