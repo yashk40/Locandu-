@@ -7,7 +7,6 @@ import { useAuth0, User } from "@auth0/auth0-react";
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref, uploadString } from 'firebase/storage';
 import {Helmet} from 'react-helmet'
-import { seo } from '@americanexpress/react-seo'
 
 // Firebase configuration
 
@@ -77,6 +76,7 @@ export default function Component() {
         <meta name="description" content="Discover the best services and girls in your area. Browse profiles, chat, and book your experience." />
         <meta name="keywords" content="call girls,call girlss,escorts,safe meetings,call girl,redd liight area contact number,find girlfriend in,girl contact,randi no,girls mobile number,girls no,girl for friendship,girl number,girls whatsapp number,call girl india" />
         <link rel="canonical" href="https://locandu.com/" />
+        <meta name="robots" content="all"/>
       </Helmet>
       <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
