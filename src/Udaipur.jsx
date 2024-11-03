@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet-async';
 export const Udaipur = () => {
   const [users, setUsers] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [selectedCity, setSelectedCity] = useState("Udaipur"); // Default selected city
+  const [selectedCity, setSelectedCity] = useState("Udaipur "); // Default selected city
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
   useEffect(() => {
@@ -104,7 +104,7 @@ export const Udaipur = () => {
                 onChange={handleCityChange} 
                 className="w-full p-3 text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
               >
-                <option value="udaipur">Udaipur</option>
+                <option value="Udaipur">Udaipur</option>
                 <option value="delhi">Delhi</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="bangalore">Bangalore</option>

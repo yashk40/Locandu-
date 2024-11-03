@@ -57,7 +57,7 @@ export const Jaipur = () => {
        <Helmet>
         <title>Locandu -Call Girls in Jaipur, Real & Safe Meeting Anytime</title>
         <meta name="description" content="If you're looking for Jaipur call girls, Locandu is a safe classified Platform, You can find many call girls in Jaipur Anytime For a Real Meeting." />
-        <meta name="keywords" content="Jaipur call girls, call girls Jaipur, Jaipur call girl, call girl in Jaipur, call girl Jaipur" />
+        <meta name="keywords" content="Jaipur call girls,call girls Jaipur,Jaipur call girl,call girl in Jaipur,call girl Jaipur" />
         <meta property="og:title" content="Locandu | Call Girls in Jaipur" />
         <meta property="og:description" content="Explore a wide selection of call girls in Jaipur with guaranteed safety and discretion. Find your perfect match today!" />
         <meta property="og:image" content="URL_to_your_image" />
