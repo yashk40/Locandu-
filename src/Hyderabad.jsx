@@ -60,8 +60,9 @@ export const  Hyderabad = () => {
       <Helmet>
         <title>Locandu -Call Girls in Hyderabad, Real & Safe Meeting Anytime</title>
         <meta name="description" content="If you're looking for Hyderabad call girls, Locandu is a safe classified Platform, You can find many call girls in Hyderabad Anytime For a Real Meeting." />
-        <meta name="keywords" content="Hyderabad call girls,call girls Hyderabad,Hyderabad call girl,call girl in Hyderabad,call girl Hyderabad" />
+        <meta name="keywords" content="call girl service hyderabad,Hyderabad call girls,call girls Hyderabad,Hyderabad call girl,call girl in Hyderabad,call girl Hyderabad" />
         <meta property="og:title" content="Locandu | Call Girls in Hyderabad" />
+        <meta property="og:description" content="Explore a wide selection of call girls in hyderabad with guaranteed safety and discretion. Find your perfect match today!" />
         <meta property="og:image" content="URL_to_your_image" />
         <link rel="canonical" href={`https://locandu.com/`} /> 
       </Helmet>
