@@ -58,7 +58,7 @@ export const Delhi = () => {
         <Helmet>
     <title>Top Call Girls in Delhi | Safe & Discreet Meetings at Locandu</title>
     <meta name="description" content="Discover the best call girls in Delhi at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
-    <meta name="keywords" content="Delhi call girls,call girls Delhi,Delhi escorts,safe meetings Delhi,call girl Delhi,Delhi redd liight area contact number,find girlfriend in Delhi,Delhi girl contact,Delhi randi no,Delhi girls mobile number,Delhi girls no,Delhi girl for friendship,Delhi randi phone number,Delhi girl number,Delhi girls whatsapp number,call girl in Delhi" />
+    <meta name="keywords" content="call girl service delhi,Delhi call girls,call girls Delhi,Delhi escorts,safe meetings Delhi,call girl Delhi,Delhi redd liight area contact number,find girlfriend in Delhi,Delhi girl contact,Delhi randi no,Delhi girls mobile number,Delhi girls no,Delhi girl for friendship,Delhi randi phone number,Delhi girl number,Delhi girls whatsapp number,call girl in Delhi" />
     <meta property="og:title" content="Premium Call Girls in Delhi | Locandu" />
     <meta property="og:description" content="Explore a wide selection of call girls in Delhi with guaranteed safety and discretion. Find your perfect match today!" />
     <meta property="og:image" content="URL_to_your_image" /> 
