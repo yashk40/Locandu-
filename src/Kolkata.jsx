@@ -57,7 +57,7 @@ export const Kolkata = () => {
                  <Helmet>
     <title>Top Call Girls in Kolkata | Safe & Discreet Meetings at Locandu</title>
     <meta name="description" content="Discover the best call girls in Kolkata at Locandu. With thousands of options, we ensure safe and discreet meetings tailored to your preferences." />
-    <meta name="keywords" content="Kolkata call girls,call girls Kolkata,Kolkata escorts,safe meetings Kolkata,call girl Kolkata,Kolkata redd liight area contact number,find girlfriend in Kolkata,Kolkata girl contact,Kolkata randi no,Kolkata girls mobile number,Kolkata girls no,Kolkata girl for friendship,Kolkata randi phone number,Kolkata girl number,Kolkata girls whatsapp number,call girl in Kolkata" />
+    <meta name="keywords" content="kolkata call girl services,Kolkata call girl services,Kolkata call girls,call girls Kolkata,Kolkata escorts,safe meetings Kolkata,call girl Kolkata,Kolkata redd liight area contact number,find girlfriend in Kolkata,Kolkata girl contact,Kolkata randi no,Kolkata girls mobile number,Kolkata girls no,Kolkata girl for friendship,Kolkata randi phone number,Kolkata girl number,Kolkata girls whatsapp number,call girl in Kolkata" />
     <meta property="og:title" content="Premium Call Girls in Kolkata | Locandu" />
     <meta property="og:description" content="Explore a wide selection of call girls in Kolkata with guaranteed safety and discretion. Find your perfect match today!" />
     <meta property="og:image" content="URL_to_your_image" /> 
