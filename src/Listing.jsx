@@ -1,8 +1,11 @@
+
 import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { LogIn, PlusCircle, Menu, X, User, List, Edit } from 'lucide-react';
 import { Link } from "react-router-dom";
-import { getFirestore, doc, getDocs, deleteDoc, collection, setDoc, getDoc } from "firebase/firestore";
+import { getFirestore, doc, getDocs, deleteDoc, collection, setDoc, getDoc, updateDoc } from "firebase/firestore";
+
+
 
 const Listing = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -106,6 +109,7 @@ const Listing = () => {
         }
     }, [user]);
 
+
     return (
         <>
             <header className="bg-gradient-to-r text-[#421493] p-4 shadow-md relative z-20">
@@ -185,7 +189,7 @@ const Listing = () => {
                                                 </p>
                                             </div>
                                             <p>
-                                                {data.day}
+                                               Day {data.day}
                                             </p>
                                             <div className="mt-2">
                                                 {data.imageUrl && (

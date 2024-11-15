@@ -177,10 +177,14 @@ const [days, setDays] = useState(3); // State for days
         else if (selectedDuration === "7") tokenCost = 300;
         else if (selectedDuration === "30") tokenCost = 999;
 
+        // Check if tokens are sufficient for the selected duration
         if (tokens < tokenCost) {
             alert("You do not have enough tokens for this promotion.");
             return;
         }
+
+        // Deduct tokens after successful submission
+        await updateTokens(tokens - tokenCost); // Deduct the token cost here
 
         try {
             const userEmail = user.email.replace('.', '_');
@@ -190,7 +194,6 @@ const [days, setDays] = useState(3); // State for days
             
             await setDoc(doc(userDocRef, 'formData', newSubmissionId), { ...formData, submissionId: newSubmissionId });
             await setDoc(userDocRef, { submissionCount: newSubmissionNumber }, { merge: true });
-            await updateTokens(tokens); 
 
             alert("Form data saved successfully!");
             navigate('/promote-your-ad');
