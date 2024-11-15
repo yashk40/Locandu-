@@ -49,34 +49,35 @@ const Profile = () => {
 
   return (
       <>
-        <header className="bg-gradient-to-r from-green-400 to-green-600 p-4 shadow-md relative z-20">
+        <header className="bg-gradient-to-r  p-4 shadow-md relative z-20">
         <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center justify-between w-full sm:w-auto mb-4 sm:mb-0">
-            <h1 className="text-2xl sm:text-3xl font-bold text-white relative" id='logo'>Locandu</h1>
-            <button className="sm:hidden text-white" onClick={toggleMenu}>
+            <h1 className="text-2xl sm:text-3xl font-bold text-[#421493] relative" id='logo'>Locandu</h1>
+            <button className="sm:hidden text-[#421493] " onClick={toggleMenu}>
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
           <div className={`${isMenuOpen ? 'flex' : 'hidden'} sm:flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 w-full sm:w-auto`}>
-          { isAuthenticated ? (
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-7">
-               <Link to="/Profile" className="text-white flex items-center justify-center">Profile</Link>
-              <a href="" className="flex items-center justify-center text-white hover:text-green-100 transition-colors w-full sm:w-auto py-2 sm:py-0 cursor-pointer" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                Log Out
+            {isAuthenticated ? (
+              <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-7">
+                <span className="flex items-center justify-center text-[#421493] transition-colors w-full sm:w-auto py-2 sm:py-0">
+                  {user.email}
+                </span>
+                <Link to="/Profile" className="text-[#421493] flex items-center justify-center">Profile</Link>
+                <a href="" className="flex items-center justify-center text-[#421493] transition-colors w-full sm:w-auto py-2 sm:py-0 cursor-pointer" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                  Log Out
+                </a>
+                <Link to="/Admin" className="flex items-center justify-center text-[#421493] px-4 py-2 rounded-full transition-colors w-full sm:w-auto">
+                  <PlusCircle className="w-5 h-5 mr-1" />
+                  Post Your Ad
+                </Link>
+              </div>
+            ) : (
+              <a href="" onClick={handleLogin} className="flex items-center justify-center text-[#421493] transition-colors w-full sm:w-auto py-2 sm:py-0 cursor-pointer">
+                <LogIn className="w-5 h-5 mr-1 cursor-pointer" />
+                Login
               </a>
-              <Link to="/Admin" className="flex items-center justify-center bg-white text-green-600 px-4 py-2 rounded-full hover:bg-green-100 transition-colors w-full sm:w-auto">
-                <PlusCircle className="w-5 h-5 mr-1" />
-                Post Your Ad
-              </Link>
-            </div>
-          ) :(
-           
-                        <a href="" onClick={() => loginWithRedirect()} className="flex items-center justify-center text-white hover:text-green-100 transition-colors w-full sm:w-auto py-2 sm:py-0 cursor-pointer" >
-              <LogIn className="w-5 h-5 mr-1" />
-              Login
-            </a>
-          
-          )}
+            )}
           </div>
         </div>
       </header>
@@ -102,7 +103,7 @@ const Profile = () => {
             <List size={20} />
             <span>My Listings</span>
           </Link>
-          <Link to="/Profile" className="flex items-center space-x-2 bg-green-500 text-white p-2 rounded">
+          <Link to="/Profile" className="flex items-center space-x-2 bg-[#421493] text-[#ffffff]  p-2 rounded">
             <User size={20} />
             <span>Wallet</span>
           </Link>
