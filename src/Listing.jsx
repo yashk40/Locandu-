@@ -15,6 +15,7 @@ const Listing = () => {
     const [availableTokens, setAvailableTokens] = useState(0);
 
     const { user, isAuthenticated, logout, loginWithRedirect } = useAuth0();
+    const [Date,NewDate]=useState(0)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -110,6 +111,27 @@ const Listing = () => {
     }, [user]);
 
 
+    fetch('http://worldtimeapi.org/api/timezone/Asia/Kolkata')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Extract the datetime and print only the day
+    const datetime = data.datetime;
+    const day = datetime.split('-')[2].split('T')[0]; // Extract the day part
+    console.log('Day:', day);
+   NewDate(day);
+  })
+  .catch(error => {
+    console.error('Error fetching the API:', error);
+  });
+
+
+// Input values
+
     return (
         <>
             <header className="bg-gradient-to-r text-[#421493] p-4 shadow-md relative z-20">
@@ -159,66 +181,81 @@ const Listing = () => {
                 </aside>
 
                 <div className="flex-1 max-w-xl mx-auto py-3 w-8/12">
-                    {submissionData.length === 0 ? (
-                        <p className="text-gray-500 text-center">No submissions available.</p>
-                    ) : (
-                        submissionData.filter(submission => submission).map((data) => (
-                            <div key={data.submissionNumber} className="max-w-2xl mx-auto p-4 mb-4">
-                                <div className="border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-                                    <div className="flex items-start space-x-4 p-4">
-                                        <div className="flex-1 min-w-0">
-                                            <h2 className="text-lg font-semibold text-gray-900 truncate">Title: {data.title || "Title"}</h2>
-                                            <p className="text-sm text-gray-500">
-                                                <span className="mr-2">State: {data.state}</span>
-                                            </p>
-                                            <p className="text-sm text-gray-500 mt-1">
-                                                City: {data.city || "City"}
-                                            </p>
-                                            <p className="text-sm text-gray-500 mt-1">
-                                                Gender: {data.gender || "Gender"}
-                                            </p>
-                                            <p className="text-sm text-gray-500 mt-1">
-                                                Telegram: {data.telegram || "Telegram"}
-                                            </p>
-                                            <p className="text-sm text-gray-500 mt-1">
-                                                Whatsapp: {data.whatsapp || "Whatsapp"}
-                                            </p>
-                                            <div className="max-h-24 overflow-y-auto">
-                                                <p className="text-sm text-gray-500 mt-1">
-                                                    Description: {data.description || "Description not available"}
-                                                </p>
-                                            </div>
-                                            <p>
-                                               Day {data.day}
-                                            </p>
-                                            <div className="mt-2">
-                                                {data.imageUrl && (
-                                                    <img src={data.imageUrl} alt="Submission" className="w-24 h-24 rounded-md" />
-                                                )}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="border-t border-gray-200 bg-gray-50 px-4 py-3 sm:px-6 flex justify-between items-center">
-                                        <span className="text-gray-700">Available Tokens: {availableTokens}</span>
-                                        <div className="flex space-x-2">
-                                            <button 
-                                                className="px-4 py-2 bg-[#421493] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#421493] focus:ring-offset-2"
-                                                onClick={() => deleteSubmission(data.submissionNumber)}
-                                            >
-                                                Delete
-                                            </button>
-                                            <button 
-                                                className="px-4 py-2 bg-yellow-500 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
-                                                onClick={() => editSubmission(data)}
-                                            >
-                                                <Edit className="w-4 h-4 mr-1" /> Edit
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                {submissionData.length === 0 ? (
+    <p className="text-gray-500 text-center">No submissions available.</p>
+) : (
+    submissionData.filter(submission => submission).map((data) => {
+        const presentDate = Date; // Use the state variable for the current date
+        const givenDate = data.createdAt; // Assuming createdAt is a timestamp
+        const gap = Math.floor((presentDate - givenDate) / (1000 * 60 * 60 * 24)); 
+        const remainingDays = gap > 0 ? data.day - gap : data.day;
+
+        // If remainingDays is 0, delete the submission
+        if (remainingDays <= 0) {
+            deleteSubmission(data.submissionNumber); // Call delete function
+            return null; // Skip rendering this submission
+        }
+
+        return (
+            <div key={data.submissionNumber} className="max-w-2xl mx-auto p-4 mb-4">
+                <div className="border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                    <div className="flex items-start space-x-4 p-4">
+                        <div className="flex-1 min-w-0">
+                            <h2 className="text-lg font-semibold text-gray-900 truncate">Title: {data.title || "Title"}</h2>
+                            <p className="text-sm text-gray-500">
+                                <span className="mr-2">State: {data.state}</span>
+                            </p>
+                            <p className="text-sm text-gray-500 mt-1">
+                                City: {data.city || "City"}
+                            </p>
+                            <p className="text-sm text-gray-500 mt-1">
+                                Gender: {data.gender || "Gender"}
+                            </p>
+                            <p className="text-sm text-gray-500 mt-1">
+                                Telegram: {data.telegram || "Telegram"}
+                            </p>
+                            <p className="text-sm text-gray-500 mt-1">
+                                Whatsapp: {data.whatsapp || "Whatsapp"}
+                            </p>
+                            <div className="max-h-24 overflow-y-auto">
+                                <p className="text-sm text-gray-500 mt-1">
+                                    Description: {data.description || "Description not available"}
+                                </p>
                             </div>
-                        ))
-                    )}
+                            <p>
+                               Day {data.day}
+                            </p>
+                            <p>Remaining Day: {remainingDays}</p>
+                            <div className="mt-2">
+                                {data.imageUrl && (
+                                    <img src={data.imageUrl} alt="Submission" className="w-24 h-24 rounded-md" />
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-t border-gray-200 bg-gray-50 px-4 py-3 sm:px-6 flex justify-between items-center">
+                        <span className="text-gray-700">Available Tokens: {availableTokens}</span>
+                        <div className="flex space-x-2">
+                            <button 
+                                className="px-4 py-2 bg-[#421493] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#421493] focus:ring-offset-2"
+                                onClick={() => deleteSubmission(data.submissionNumber)}
+                            >
+                                Delete
+                            </button>
+                            <button 
+                                className="px-4 py-2 bg-yellow-500 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+                                onClick={() => editSubmission(data)}
+                            >
+                                <Edit className="w-4 h-4 mr-1" /> Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    })
+)}
+                      
                     {isEditing && currentSubmission && (
                         <EditForm 
                             submission={currentSubmission} 

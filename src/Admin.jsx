@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Landing.css';
 import { useAuth0 } from "@auth0/auth0-react";
 import { db, storage } from './Firebase'; 
-import { doc, setDoc, getDoc, collection, getDocs } from "firebase/firestore"; 
+import { doc, setDoc, getDoc, collection, getDocs, Timestamp } from "firebase/firestore"; 
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; 
 import { Helmet } from 'react-helmet'
 
@@ -152,7 +152,10 @@ const [days, setDays] = useState(3); // State for days
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-
+        const createdAtDate = new Date();
+        
+        const formattedDate = createdAtDate.toISOString().split('T')[0]; // This gives you YYYY-MM-DD
+        
         const formData = {
             state: event.target.state.value,
             city: event.target.city.value,
@@ -168,6 +171,7 @@ const [days, setDays] = useState(3); // State for days
             imageUrl: downloadURL || null, // Include image URL if available
             promoted: false, // Add promoted field
             visible: false,   // Add visible field
+            createdAt: formattedDate
             
         };
 
