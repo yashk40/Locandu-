@@ -194,7 +194,7 @@ function App() {
         <Route path="/Call-girl-Noida" element={<Noida />} />
         <Route path="/Call-girl-Kanpur" element={<Kanpur />} />
         <Route path="/Call-girl-Varanasi" element={<Varanasi />} />
-        <Route path="/CalFl-girl-Ranchi" element={<Ranchi />} />
+        <Route path="/Call-girl-Ranchi" element={<Ranchi />} />
         <Route path="/Call-girl-Gwailor" element={<Gwalior/>} />
         <Route path="/Call-girl-Surat" element={<Surat />} />
         <Route path="/Call-girl-Ludhiana" element={<Ludhiana />} />
