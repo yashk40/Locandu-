@@ -15,7 +15,7 @@ const Listing = () => {
     const [availableTokens, setAvailableTokens] = useState(0);
 
     const { user, isAuthenticated, logout, loginWithRedirect } = useAuth0();
-    const [Date,NewDate]=useState(0)
+    const [Date,NewDate]=useState(1)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -111,7 +111,7 @@ const Listing = () => {
     }, [user]);
 
 
-    fetch('http://worldclockapi.com/api/json/est/now')
+    fetch('https://timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam')
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -120,18 +120,18 @@ const Listing = () => {
     })
     .then(data => {
       // Extract the datetime string
-      const datetime = data.currentDateTime; // e.g., "2024-11-17T12:34:56"
+      const datetime = data.dateTime; // e.g., "2024-11-17T12:34:56"
   
-      // Extract only the day number using string manipulation
+      // Extract only the day number and print the last digit
       const day = datetime.split('-')[2].split('T')[0]; // Get the day part from the date
-      NewDate(day)
-      // Print only the day number
-      console.log('Day Number:', day);
+      const lastDigit = day.slice(-2); // Get the last digit of the day
+      console.log('Last Digit of Day:', lastDigit);
+      NewDate(lastDigit);
     })
     .catch(error => {
       console.error('Error fetching the API:', error);
     });
-  
+
 
     return (
         <>
@@ -186,18 +186,20 @@ const Listing = () => {
     <p className="text-gray-500 text-center">No submissions available.</p>
 ) : (
     submissionData.filter(submission => submission).map((data) => {
-        const presentDate = Date; // Use the state variable for the current date
+        const presentDate = 16; // Use the state variable for the current date
         console.log(Date)
         const givenDate = data.createdAt; // Example input
 const day = givenDate.split('-')[2]; // Extracting the day part
 const lastTwoDigits = day.slice(-2); // Getting the last two digits (though the day is already 2 digits)
-console.log(lastTwoDigits); // Output: "22"
+console.log(presentDate); // Output: "22"
 
         
         console.log(givenDate)
-        const gap = (presentDate - lastTwoDigits) ; 
+        const gap = (lastTwoDigits - presentDate) ; 
         console.log("gap is",gap)
-        const remainingDays = gap > 0 ? data.day - gap : data.day;
+        
+        const remainingDays = data.day - gap
+        console.log(remainingDays)
         // If remainingDays is 0, delete the submission
         if (remainingDays <= 0) {
             deleteSubmission(data.submissionNumber); // Call delete function
