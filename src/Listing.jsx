@@ -111,7 +111,7 @@ const Listing = () => {
     }, [user]);
 
 
-    fetch('https://timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam')
+    fetch('https://worldtimeapi.org/api/timezone/Asia/Kolkata')
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -120,18 +120,17 @@ const Listing = () => {
     })
     .then(data => {
       // Extract the datetime string
-      const datetime = data.dateTime; // e.g., "2024-11-17T12:34:56"
+      const datetime = data.datetime; // Make sure to use "datetime" exactly as it is in the API response
   
-      // Extract only the day number and print the last digit
+      // Extract only the day number and print the last two digits
       const day = datetime.split('-')[2].split('T')[0]; // Get the day part from the date
-      const lastDigit = day.slice(-2); // Get the last digit of the day
-      console.log('Last Digit of Day:', lastDigit);
-      NewDate(lastDigit);
+      const lastTwoDigits = day.slice(-2); // Get the last two digits of the day
+      console.log('Last Two Digits of Day:', lastTwoDigits);
+      NewDate(lastTwoDigits);
     })
     .catch(error => {
       console.error('Error fetching the API:', error);
     });
-
 
     return (
         <>
@@ -187,20 +186,18 @@ const Listing = () => {
 ) : (
     submissionData.filter(submission => submission).map((data) => {
         const presentDate = Date; // Use the state variable for the current date
-        console.log(Date)
+        console.log(presentDate)
         const givenDate = data.createdAt; // Example input
 const day = givenDate.split('-')[2]; // Extracting the day part
 const lastTwoDigits = day.slice(-2); // Getting the last two digits (though the day is already 2 digits)
-console.log(presentDate); // Output: "22"
+console.log(lastTwoDigits); // Output: "22"
 
         
-        console.log(givenDate)
-        const gap = (lastTwoDigits - presentDate) ; 
+  const gap = (lastTwoDigits - presentDate) ; 
         console.log("gap is",gap)
         
         const remainingDays = data.day - gap
         console.log(remainingDays)
-        // If remainingDays is 0, delete the submission
         if (remainingDays <= 0) {
             deleteSubmission(data.submissionNumber); // Call delete function
             return null; // Skip rendering this submission
