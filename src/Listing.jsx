@@ -186,7 +186,7 @@ const Listing = () => {
     <p className="text-gray-500 text-center">No submissions available.</p>
 ) : (
     submissionData.filter(submission => submission).map((data) => {
-        const presentDate = 16; // Use the state variable for the current date
+        const presentDate = Date; // Use the state variable for the current date
         console.log(Date)
         const givenDate = data.createdAt; // Example input
 const day = givenDate.split('-')[2]; // Extracting the day part
