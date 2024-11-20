@@ -241,7 +241,6 @@ const Listing = () => {
                         </div>
                     </div>
                     <div className="border-t border-gray-200 bg-gray-50 px-4 py-3 sm:px-6 flex justify-between items-center">
-                        <span className="text-gray-700">Available Tokens: {availableTokens}</span>
                         <div className="flex space-x-2">
                             <button 
                                 className="px-4 py-2 bg-[#421493] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#421493] focus:ring-offset-2"
