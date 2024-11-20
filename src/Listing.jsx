@@ -111,26 +111,26 @@ const Listing = () => {
     }, [user]);
 
 
-    fetch('https://worldtimeapi.org/api/timezone/Asia/Kolkata')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      // Extract the datetime string
-      const datetime = data.datetime; // Make sure to use "datetime" exactly as it is in the API response
+    // fetch('https://worldtimeapi.org/api/timezone/Asia/Kolkata')
+    // .then(response => {
+    //   if (!response.ok) {
+    //     throw new Error(`HTTP error! status: ${response.status}`);
+    //   }
+    //   return response.json();
+    // })
+    // .then(data => {
+    //   // Extract the datetime string
+    //   const datetime = data.datetime; // Make sure to use "datetime" exactly as it is in the API response
   
-      // Extract only the day number and print the last two digits
-      const day = datetime.split('-')[2].split('T')[0]; // Get the day part from the date
-      const lastTwoDigits = day.slice(-2); // Get the last two digits of the day
-      console.log('Last Two Digits of Day:', lastTwoDigits);
-      NewDate(lastTwoDigits);
-    })
-    .catch(error => {
-      console.error('Error fetching the API:', error);
-    });
+    //   // Extract only the day number and print the last two digits
+    //   const day = datetime.split('-')[2].split('T')[0]; // Get the day part from the date
+    //   const lastTwoDigits = day.slice(-2); // Get the last two digits of the day
+    //   console.log('Last Two Digits of Day:', lastTwoDigits);
+    //   NewDate(lastTwoDigits);
+    // })
+    // .catch(error => {
+    //   console.error('Error fetching the API:', error);
+    // });
 
     return (
         <>
@@ -185,23 +185,23 @@ const Listing = () => {
     <p className="text-gray-500 text-center">No submissions available.</p>
 ) : (
     submissionData.filter(submission => submission).map((data) => {
-        const presentDate = Date; // Use the state variable for the current date
-        console.log(presentDate)
-        const givenDate = data.createdAt; // Example input
-const day = givenDate.split('-')[2]; // Extracting the day part
-const lastTwoDigits = day.slice(-2); // Getting the last two digits (though the day is already 2 digits)
-console.log(lastTwoDigits); // Output: "22"
+//         const presentDate = Date; // Use the state variable for the current date
+//         console.log(presentDate)
+//         const givenDate = data.createdAt; // Example input
+// const day = givenDate.split('-')[2]; // Extracting the day part
+// const lastTwoDigits = day.slice(-2); // Getting the last two digits (though the day is already 2 digits)
+// console.log(lastTwoDigits); // Output: "22"
 
         
-  const gap = (lastTwoDigits - presentDate) ; 
-        console.log("gap is",gap)
+//   const gap = (lastTwoDigits - presentDate) ; 
+//         console.log("gap is",gap)
         
-        const remainingDays = data.day - gap
-        console.log(remainingDays)
-        if (remainingDays <= 0) {
-            deleteSubmission(data.submissionNumber); // Call delete function
-            return null; // Skip rendering this submission
-        }
+//         const remainingDays = data.day - gap
+//         console.log(remainingDays)
+//         if (remainingDays <= 0) {
+//             deleteSubmission(data.submissionNumber); // Call delete function
+//             return null; // Skip rendering this submission
+//         }
 
         return (
             <div key={data.submissionNumber} className="max-w-2xl mx-auto p-4 mb-4">
@@ -232,7 +232,7 @@ console.log(lastTwoDigits); // Output: "22"
                             <p>
                                Day {data.day}
                             </p>
-                            <p>Remaining Day: {remainingDays}</p>
+                            <p>Remaining Day: {data.day}</p>
                             <div className="mt-2">
                                 {data.imageUrl && (
                                     <img src={data.imageUrl} alt="Submission" className="w-24 h-24 rounded-md" />
